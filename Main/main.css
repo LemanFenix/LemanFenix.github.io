@@ -192,3 +192,15 @@ body {
         width: 100px;
     }
 }
+
+
+/* Add this to your <style> block or a CSS file like Main/navbar.css or Main/main.css */
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .show > .nav-link { /* Includes active state for dropdowns if any */
+    color: #CEC298 !important; /* Use !important if Bootstrap's specificity is overriding it */
+}
+
+/* Optional: If you want the hover color to also be this new color or something related */
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #e0d8b0; /* A slightly lighter shade for hover, or use #CEC298 as well */
+}
