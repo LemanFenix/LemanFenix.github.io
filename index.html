@@ -17,6 +17,18 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
         /* --- Add your new CSS rules here --- */
+        .partner-logo {
+            max-height: 80px; /* Adjust as needed */
+            width: auto;
+            margin-bottom: 15px;
+            transition: transform 0.2s ease-in-out, filter 0.3s ease;
+            filter: grayscale(50%); /* Optional: desaturate */
+        }
+
+        .partner-logo:hover {
+            transform: scale(1.1); /* Optional: enlarge on hover */
+            filter: grayscale(0%);   /* Optional: full color on hover */
+        }
         /* --- End of new CSS rules --- */
 
 
@@ -69,6 +81,9 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#advisors">Advisors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#partners">Partners</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#impact">Impact</a>
@@ -252,6 +267,31 @@
         <p class="text-center mt-3">Our advisory board brings crucial biotech expertise, entrepreneurial experience, and a global network, enhancing our credibility and strategic direction.</p>
     </section>
 
+    <section id="partners" class="container my-5 scroll-offset bg-light py-5 rounded">
+        <h2 class="text-center mb-5 section-title">Our Partners and Accelerators</h2>
+        <div class="row justify-content-center align-items-center text-center gy-4">
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <a href="#" target="_blank" rel="noopener noreferrer" title="University of Huelva"> {/* TODO: Replace # with actual URL */}
+                    <img src="Images/UHU.jpg" alt="University of Huelva Logo" class="img-fluid partner-logo">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <a href="#" target="_blank" rel="noopener noreferrer" title="University of Santiago de Compostela"> {/* TODO: Replace # with actual URL */}
+                    <img src="Images/USC.jpg" alt="University of Santiago de Compostela Logo" class="img-fluid partner-logo">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <a href="#" target="_blank" rel="noopener noreferrer" title="Venturelab"> {/* TODO: Replace # with actual URL */}
+                    <img src="Images/venturelab.jpg" alt="Venturelab Logo" class="img-fluid partner-logo">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <a href="#" target="_blank" rel="noopener noreferrer" title="Innosuisse"> {/* TODO: Replace # with actual URL */}
+                    <img src="Images/innosuisse.jpg" alt="Innosuisse Logo" class="img-fluid partner-logo">
+                </a>
+            </div>
+        </div>
+    </section>
     <section id="impact" class="container my-5 scroll-offset">
         <h2 class="text-center mb-4 section-title">Impact & Sustainability</h2>
         <div class="row justify-content-center">
