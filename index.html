@@ -16,42 +16,7 @@
     <link rel="stylesheet" href="Main/totop.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
-        /* --- Add your new CSS rules here --- */
-        .partner-logo {
-            max-height: 80px; /* Adjust as needed */
-            width: auto;
-            margin-bottom: 15px;
-            transition: transform 0.2s ease-in-out, filter 0.3s ease;
-            filter: grayscale(50%); /* Optional: desaturate */
-        }
-
-        .partner-logo:hover {
-            transform: scale(1.1); /* Optional: enlarge on hover */
-            filter: grayscale(0%);   /* Optional: full color on hover */
-        }
-        /* --- End of new CSS rules --- */
-
-
-        /* Existing CSS from your example */
-        .card[role="button"] {
-            cursor: pointer;
-        }
-        .linkedin-logo {
-            width: 24px;
-            height: 24px;
-        }
-        .profile-pic {
-            width: 150px; 
-            height: 150px;
-            object-fit: cover;
-            border-radius: 50%;
-        }
-        .profile-pic-low-saturation {
-           filter: grayscale(80%); 
-        }
-        /* .advisor-card .profile-pic {  <-- MAKE SURE TO REMOVE OR COMMENT THIS if it exists, as per above instructions
-           filter: none; 
-        } */
+        
 
     </style>
 </head>
@@ -100,13 +65,18 @@
     <button onclick="topFunction()" id="buttonscroll" title="Go to top"></button>
     
     <section class="hero-section text-center py-5">
-        <div class="container">
-            <img src="Images/logo.png" alt="Poultry or abstract resilience concept" class="img-fluid rounded mt-3" style="max-height: 400px; object-fit: cover;">
-            <h1 class="display-4 section-title">Enhancing heat resilience for a cooler future</h1>
-            <p class="lead">LemanFenix is dedicated to mitigating heat stress in poultry through innovative, natural solutions, improving animal welfare and securing food production in a warming world.</p>
-            
+    <div class="container">
+        <img src="Images/logo.png" alt="Poultry or abstract resilience concept" class="img-fluid rounded mt-3" style="max-height: 400px; object-fit: cover;">
+        <h1 class="display-4 section-title">Enhancing heat resilience for a cooler future</h1>
+        <p class="lead">LemanFenix is dedicated to mitigating heat stress in poultry through innovative, natural solutions, improving animal welfare and securing food production in a warming world.</p>
+        
+        <div class=" justify-content-center mt-4"> 
+            <div class="video-responsive">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/jZeZRFNXPOY?si=XsHYg7IYqE4k2s39" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
         </div>
-    </section>
+        </div>
+</section>
 
     <section id="problem" class="container my-5 scroll-offset">
         <h2 class="text-center mb-4 section-title">The Problem: Heat Stress in Poultry</h2>
